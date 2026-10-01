@@ -1,6 +1,5 @@
-from app import app as vulnerable_app
-from app_fixed import app as fixed_app
-
+from labs.auth_bypass.vulnerable.app import app as vulnerable_app
+from labs.auth_bypass.fixed.app import app as fixed_app
 
 def test_auth_bypass_vulnerable():
     vulnerable_app.config["TESTING"] = True

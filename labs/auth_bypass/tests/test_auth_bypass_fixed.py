@@ -1,4 +1,4 @@
-from app_fixed import app
+from labs.auth_bypass.fixed.app import app
 
 
 def test_wrong_password():

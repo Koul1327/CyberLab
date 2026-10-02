@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Комментарии</title>
+</head>
+<body>
+    <form method="POST">
+        <input name="comment" placeholder="Комментарий">
+        <button type="submit">Отправить</button>
+    </form>
+
+    {% for comment in comments %}
+        <p>{{ comment }}</p>
+    {% endfor %}
+</body>
+</html>
